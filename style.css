@@ -1,0 +1,1296 @@
+
+/* =========================================
+   SaRa TOYVERSE - COMPLETE WEBSITE STYLING
+   Brand Colours: Black, Red, Yellow, White
+========================================= */
+
+
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #171717;
+}
+
+:root {
+    --red: #e51d2a;
+    --dark: #101010;
+    --yellow: #ffc928;
+    --white: #ffffff;
+    --grey: #777777;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* =========================================
+   2. HEADER
+========================================= */
+
+.header {
+    min-height: 90px;
+    padding: 10px 6%;
+    background: var(--dark);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+
+.brand img {
+    width: 105px;
+    height: 68px;
+    object-fit: contain;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--yellow);
+}
+
+/* Header Buttons */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-button,
+.menu-button {
+    background: #292929;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.contact-button {
+    background: var(--yellow);
+    color: var(--dark);
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: var(--red);
+    color: white;
+}
+
+.cart-button {
+    background: var(--red);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* =========================================
+   3. SEARCH BAR
+========================================= */
+
+.search-bar {
+    display: none;
+    padding: 18px 7%;
+    background: #252525;
+    gap: 10px;
+}
+
+.search-bar.active {
+    display: flex;
+}
+
+.search-bar input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background: var(--yellow);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   4. HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 540px;
+    padding: 65px 8%;
+
+    background: linear-gradient(
+        120deg,
+        #111111,
+        #303030
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.eyebrow {
+    color: var(--yellow);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    margin: 22px 0;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--red);
+}
+
+.hero-content > p {
+    color: #dddddd;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.primary-button {
+    display: inline-block;
+    background: var(--yellow);
+    color: #111111;
+    padding: 15px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background: var(--red);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.hero-tagline {
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--yellow);
+}
+
+/* Hero Logo */
+
+.hero-visual {
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================================
+   5. BENEFITS SECTION
+========================================= */
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    padding: 28px 7%;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.benefit span {
+    font-size: 30px;
+}
+
+.benefit h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.benefit p {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+
+/* =========================================
+   6. COMMON SECTION STYLES
+========================================= */
+
+.section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: var(--grey);
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   7. ATTRACTIVE CATEGORY SECTION
+========================================= */
+
+.categories {
+    padding: 85px 8%;
+    background: #111111;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Category Heading */
+
+.categories .section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.categories .section-heading h2 {
+    font-size: 38px;
+    color: #ffffff;
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+.categories .section-heading p {
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.categories .eyebrow {
+    color: #ffc928;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Category Grid */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Category Cards */
+
+.category-card {
+    position: relative;
+    min-height: 340px;
+    padding: 25px 20px;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* Individual Category Colours */
+
+.sports-card {
+    background: linear-gradient(
+        145deg,
+        #ffebeb,
+        #ffb8b8
+    );
+}
+
+.monster-card {
+    background: linear-gradient(
+        145deg,
+        #e5f4ff,
+        #a5d8ff
+    );
+}
+
+.rc-card {
+    background: linear-gradient(
+        145deg,
+        #f1e8ff,
+        #c9a8ff
+    );
+}
+
+.pullback-card {
+    background: linear-gradient(
+        145deg,
+        #fff3d5,
+        #ffda83
+    );
+}
+
+/* Category Labels */
+
+.category-label {
+    display: inline-block;
+    align-self: center;
+
+    background: #111111;
+    color: #ffc928;
+
+    padding: 8px 14px;
+    border-radius: 25px;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Category Icons */
+
+.category-image {
+    font-size: 95px;
+    padding: 15px 0;
+    transition: transform 0.35s ease;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+/* Category Information */
+
+.category-info h3 {
+    font-size: 21px;
+    color: #111111;
+    margin-bottom: 9px;
+    font-weight: 800;
+}
+
+.category-info p {
+    color: #414141;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Category Buttons */
+
+.category-button {
+    display: inline-block;
+
+    background: #111111;
+    color: #ffffff;
+
+    padding: 12px 20px;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.category-button:hover {
+    background: var(--red);
+    color: #ffffff;
+}
+
+
+/* =========================================
+   8. PRODUCT SECTION
+========================================= */
+
+.products {
+    background: #eeeeee;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 190px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f8f8f8;
+    font-size: 75px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    font-size: 11px;
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.availability {
+    display: inline-block;
+
+    background: #fff2cf;
+    color: #976400;
+
+    padding: 7px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   9. ABOUT US SECTION
+========================================= */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 75px 10%;
+    background: white;
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content h2 {
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.about-content p {
+    color: var(--grey);
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-content strong {
+    color: var(--red);
+}
+
+.about-visual {
+    background: #171717;
+    color: var(--yellow);
+
+    padding: 55px 35px;
+    border-radius: 15px;
+
+    font-size: 45px;
+}
+
+
+/* =========================================
+   10. FOOTER
+========================================= */
+
+footer {
+    background: #101010;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.footer-content h2 {
+    color: var(--yellow);
+    margin-bottom: 12px;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content p,
+.footer-content a {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.footer-content a:hover {
+    color: var(--yellow);
+}
+
+.copyright {
+    border-top: 1px solid #393939;
+    text-align: center;
+    padding-top: 20px;
+    color: #bbbbbb;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   11. WHATSAPP FLOATING BUTTON
+========================================= */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 14px 20px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   12. TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-visual {
+        width: 270px;
+        height: 270px;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+}
+
+
+/* =========================================
+   13. MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 650px) {
+
+    /* Header */
+
+    .header {
+        flex-wrap: wrap;
+        padding: 12px 5%;
+    }
+
+    .brand img {
+        width: 80px;
+        height: 55px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .contact-button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 20px;
+    }
+
+    .hero-visual {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    /* Benefits */
+
+    .benefits {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Categories */
+
+    .categories {
+        padding: 55px 6%;
+    }
+
+    .categories .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-card {
+        min-height: 320px;
+    }
+
+    /* Products */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Search */
+
+    .search-bar {
+        padding: 15px 5%;
+    }
+
+    /* WhatsApp */
+
+    .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+    }
+
+}
+
+/* =====================================
+   NEWSLETTER SUBSCRIPTION
+===================================== */
+
+.newsletter {
+    background: #e0f2fe;
+    padding: 65px 20px 100px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: #168bd2;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.newsletter > p {
+    color: #666666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 780px;
+    margin: auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 22px 20px;
+    border: 1px solid #cbdde9;
+    border-radius: 13px;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: #168bd2;
+}
+
+.newsletter-form button {
+    background: #ffad25;
+    color: #111111;
+    border: none;
+    padding: 22px 32px;
+    border-radius: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #e51d2a;
+    color: white;
+}
+
+.newsletter-message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   BLUE FOOTER
+===================================== */
+
+.main-footer {
+    background: #168bd2;
+    color: #ffffff;
+    padding: 75px 8% 25px;
+}
+
+.main-footer .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 45px;
+    margin-bottom: 55px;
+}
+
+.main-footer h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.main-footer .footer-brand h2 span {
+    color: #ffcf45;
+}
+
+.main-footer .footer-brand h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.main-footer h3 {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.main-footer p,
+.main-footer a {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.main-footer p {
+    margin-bottom: 10px;
+}
+
+.main-footer .footer-links a {
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.main-footer a:hover {
+    color: #ffcf45;
+}
+
+.main-footer .copyright {
+    border-top: 1px solid rgba(255,255,255,0.35);
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 650px) {
+
+    .newsletter {
+        padding: 50px 20px 65px;
+    }
+
+    .newsletter h2 {
+        font-size: 27px;
+    }
+
+    .newsletter > p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .main-footer {
+        padding: 45px 7% 20px;
+    }
+
+    .main-footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-footer h2 {
+        font-size: 27px;
+    }
+
+    .main-footer h3 {
+        font-size: 20px;
+    }
+
+}
+
+/* =========================================
+   SaRa TOYVERSE - OFFICIAL RACING THEME
+   Black | Red | Yellow | White
+========================================= */
+
+:root {
+    --primary-blue: #111111;
+    --light-blue: #F4F4F4;
+    --dark-blue: #111111;
+    --charcoal: #111111;
+    --red: #E51D2A;
+    --yellow: #FFC928;
+    --white: #FFFFFF;
+    --grey: #777777;
+}
+
+/* HEADER */
+
+.header {
+    background: #111111;
+    border-bottom: 3px solid #E51D2A;
+}
+
+.navbar a:hover {
+    color: #FFC928;
+}
+
+.contact-button {
+    background: #FFC928;
+    color: #111111;
+}
+
+.contact-button:hover {
+    background: #E51D2A;
+    color: #FFFFFF;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(120deg, #101010, #303030);
+}
+
+.hero h1 span {
+    color: #E51D2A;
+}
+
+.hero-tagline {
+    color: #FFC928;
+}
+
+.primary-button {
+    background: #FFC928;
+    color: #111111;
+}
+
+.primary-button:hover {
+    background: #E51D2A;
+    color: #FFFFFF;
+}
+
+/* BENEFITS */
+
+.benefits {
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+/* CATEGORIES */
+
+.categories {
+    background: #111111;
+}
+
+.categories .section-heading h2 {
+    color: #FFFFFF;
+}
+
+.categories .section-heading p {
+    color: #CCCCCC;
+}
+
+.categories .eyebrow {
+    color: #FFC928;
+}
+
+.category-card {
+    border: 2px solid rgba(255,255,255,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.sports-card {
+    background: linear-gradient(145deg, #FFFFFF, #FFE0E0);
+}
+
+.monster-card {
+    background: linear-gradient(145deg, #FFFFFF, #E5E5E5);
+}
+
+.rc-card {
+    background: linear-gradient(145deg, #FFFFFF, #FFF0C2);
+}
+
+.pullback-card {
+    background: linear-gradient(145deg, #FFFFFF, #FFDADA);
+}
+
+.category-label {
+    background: #111111;
+    color: #FFC928;
+}
+
+.category-button {
+    background: #111111;
+    color: #FFFFFF;
+}
+
+.category-button:hover {
+    background: #E51D2A;
+}
+
+/* PRODUCTS */
+
+.products {
+    background: #F4F4F4;
+}
+
+.product-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+}
+
+.product-image {
+    background: #EEEEEE;
+}
+
+.product-category {
+    color: #E51D2A;
+}
+
+.availability {
+    background: #FFF0C2;
+    color: #8A5A00;
+}
+
+/* ABOUT */
+
+.about {
+    background: #FFFFFF;
+}
+
+.about-content strong {
+    color: #E51D2A;
+}
+
+.about-visual {
+    background: #111111;
+    color: #FFC928;
+    border: 3px solid #E51D2A;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background: #181818;
+    padding: 65px 20px 75px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: #FFC928;
+}
+
+.newsletter > p {
+    color: #DDDDDD;
+}
+
+.newsletter-form input {
+    background: #FFFFFF;
+    border: 2px solid #444444;
+    color: #111111;
+}
+
+.newsletter-form input:focus {
+    border-color: #FFC928;
+}
+
+.newsletter-form button {
+    background: #FFC928;
+    color: #111111;
+}
+
+.newsletter-form button:hover {
+    background: #E51D2A;
+    color: #FFFFFF;
+}
+
+.newsletter-message {
+    color: #FFFFFF;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background: #111111;
+    color: #FFFFFF;
+    border-top: 4px solid #E51D2A;
+}
+
+.main-footer h2 {
+    color: #FFFFFF;
+}
+
+.main-footer .footer-brand h2 span {
+    color: #FFC928;
+}
+
+.main-footer h3 {
+    color: #FFC928;
+}
+
+.main-footer p,
+.main-footer a {
+    color: #DDDDDD;
+}
+
+.main-footer a:hover {
+    color: #FFC928;
+}
+
+.main-footer .copyright {
+    border-top: 1px solid #444444;
+    color: #CCCCCC;
+}
+
+/* WHATSAPP */
+
+.whatsapp-button {
+    background: #25D366;
+    color: #FFFFFF;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+}
+/* WHATSAPP BUTTON - FOOTER ONLY */
+
+.main-footer {
+    position: relative;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25D366;
+    color: #FFFFFF;
+
+    padding: 14px 25px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
+
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .whatsapp-button {
+        position: static;
+        display: table;
+        margin: 25px auto 0;
+    }
+}
