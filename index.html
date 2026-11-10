@@ -1,469 +1,308 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SaRa Toyverse | Toy Cars & More</title>
+    <title>SaRa Toyverse | Play More. Smile More.</title>
 
     <meta name="description"
-        content="Explore exciting toy cars at SaRa Toyverse. Play More. Smile More.">
-
-    <meta name="keywords"
-        content="toy cars, remote control cars, racing cars, monster trucks, SaRa Toyverse">
-
-    <meta name="author" content="SaRa Toyverse">
+        content="Explore exciting toy cars, monster trucks and remote control cars at SaRa Toyverse. Play More. Smile More.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-
+    <!-- HEADER -->
     <header class="header">
+        <div class="nav-container">
 
-        <!-- BRAND LOGO -->
-        <a href="#home" class="brand">
-            <img src="images/sara-toyverse-logo.png"
-                 alt="SaRa Toyverse Logo">
-        </a>
-
-        <!-- NAVIGATION -->
-        <nav class="navbar" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#products">Shop</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <!-- HEADER ACTIONS -->
-        <div class="header-actions">
-
-            <button class="icon-button"
-                    id="searchToggle"
-                    aria-label="Open search">
-                🔍
-            </button>
-
-            <a href="tel:+919840162366"
-               class="contact-button">
-                ☎ Contact Us
+            <a href="#home" class="logo">
+                <img src="./sara-toyverse-logo.png"
+                     alt="SaRa Toyverse Logo">
             </a>
 
-            <button class="cart-button" id="cartButton">
-                🛒 Cart <span id="cartCount">0</span>
-            </button>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-            <button class="menu-button"
-                    id="menuToggle"
-                    aria-label="Open menu">
-                ☰
-            </button>
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search">
+                    🔍
+                </button>
+
+                <a href="#contact" class="contact-btn">
+                    ☎ Contact Us
+                </a>
+
+                <button class="cart-btn">
+                    🛒 Cart <span id="cart-count">0</span>
+                </button>
+            </div>
 
         </div>
-
     </header>
 
 
-    <!-- ================= SEARCH BAR ================= -->
-
-    <div class="search-bar" id="searchBar">
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search toy cars..."
-        >
-
-        <button id="searchButton">
-            Search
-        </button>
-
-    </div>
-
-
-    <!-- ================= MAIN CONTENT ================= -->
-
-    <main>
-
-        <!-- HERO SECTION -->
-
-        <section class="hero" id="home">
-
-            <div class="hero-content">
-
-                <span class="eyebrow">
-                    WELCOME TO SARA TOYVERSE
-                </span>
-
-                <h1>
-                    START YOUR
-                    <span>RACING</span>
-                    ADVENTURE!
-                </h1>
-
-                <p>
-                    Discover exciting toy cars, powerful monster
-                    trucks and thrilling racing collections.
-                </p>
-
-                <a href="#products" class="primary-button">
-                    Explore Our Cars →
-                </a>
-
-                <div class="hero-tagline">
-                    PLAY MORE. SMILE MORE.
-                </div>
-
-            </div>
-
-
-            <!-- BRAND LOGO DISPLAY -->
-
-            <div class="hero-visual">
-
-                <img
-                    src="images/sara-toyverse-logo.png"
-                    alt="SaRa Toyverse Racing Logo"
-                >
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= BENEFITS ================= -->
-
-        <section class="benefits">
-
-            <div class="benefit">
-
-                <span>🏎️</span>
-
-                <div>
-                    <h3>Exciting Collections</h3>
-                    <p>Cars for every adventure</p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span>📦</span>
-
-                <div>
-                    <h3>Careful Packaging</h3>
-                    <p>Every order matters</p>
-                </div>
-
-            </div>
-
-
-            <div class="benefit">
-
-                <span>⭐</span>
-
-                <div>
-                    <h3>Made for Fun</h3>
-                    <p>Bring home happiness</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CATEGORIES ================= -->
-
-        
-<!-- CATEGORIES SECTION -->
-
-<section class="categories" id="categories">
-
-    <div class="section-heading">
-
-        <span class="eyebrow">CHOOSE YOUR RIDE</span>
-
-        <h2>Explore Our Toy Car Universe</h2>
-
-        <p>
-            From superfast racing cars to powerful monster trucks,
-            discover your next favourite ride!
-        </p>
-
-    </div>
-
-    <div class="category-grid">
-
-        <!-- SPORTS CARS -->
-        <article class="category-card sports-card">
-
-            <span class="category-label">SPEED & STYLE</span>
-
-            <div class="category-image">
-                🏎️
-            </div>
-
-            <div class="category-info">
-                <h3>Sports Cars</h3>
-                <p>Feel the thrill of racing!</p>
-
-                <a href="#products" class="category-button">
-                    Explore Now →
-                </a>
-            </div>
-
-        </article>
-
-
-        <!-- MONSTER TRUCKS -->
-        <article class="category-card monster-card">
-
-            <span class="category-label">POWER & ADVENTURE</span>
-
-            <div class="category-image">
-                🚙
-            </div>
-
-            <div class="category-info">
-                <h3>Monster Trucks</h3>
-                <p>Big wheels. Bigger adventures!</p>
-
-                <a href="#products" class="category-button">
-                    Explore Now →
-                </a>
-            </div>
-
-        </article>
-
-
-        <!-- RC CARS -->
-        <article class="category-card rc-card">
-
-            <span class="category-label">TAKE CONTROL</span>
-
-            <div class="category-image">
-                🎮
-            </div>
-
-            <div class="category-info">
-                <h3>Remote Control Cars</h3>
-                <p>Control the fun and own the race!</p>
-
-                <a href="#products" class="category-button">
-                    Explore Now →
-                </a>
-            </div>
-
-        </article>
-
-
-        <!-- PULL BACK CARS -->
-        <article class="category-card pullback-card">
-
-            <span class="category-label">PULL & RACE</span>
-
-            <div class="category-image">
-                🚗
-            </div>
-
-            <div class="category-info">
-                <h3>Pull-back Cars</h3>
-                <p>Pull back and watch the fun begin!</p>
-
-                <a href="#products" class="category-button">
-                    Explore Now →
-                </a>
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-        <!-- ================= ABOUT US ================= -->
-
-        <section class="about" id="about">
-
-            <div class="about-content">
-
-                <span class="eyebrow">
-                    OUR STORY
-                </span>
-
-                <h2>
-                    Welcome to SaRa Toyverse
-                </h2>
-
-                <p>
-                    SaRa Toyverse is an upcoming toy brand created
-                    to bring excitement, creativity and happiness
-                    through amazing toy collections.
-
-                    We are starting our journey with toy cars
-                    and look forward to bringing more exciting
-                    products in the future.
-                </p>
-
-                <strong>
-                    Play More. Smile More.
-                </strong>
-
-            </div>
-
-
-            <div class="about-visual">
-                🏁 🏎️ 🏆
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-<!-- NEWSLETTER SUBSCRIPTION SECTION -->
-
-<section class="newsletter" id="newsletter">
-
-    <h2>Be the First to Know!</h2>
-
-    <p>
-        Stay connected and hear about our upcoming toy collections.
-    </p>
-
-    <form class="newsletter-form" id="newsletterForm">
-
-        <input
-            type="email"
-            id="newsletterEmail"
-            placeholder="Enter your email address"
-            required
-        >
-
-        <button type="submit">
-            Subscribe
-        </button>
-
-    </form>
-
-    <p id="newsletterMessage" class="newsletter-message"></p>
-
-</section>
-
-
-<!-- FOOTER SECTION -->
-
-<footer class="main-footer" id="contact">
-
-    <div class="footer-content">
-
-        <!-- BRAND DETAILS -->
-
-        <div class="footer-brand">
-
-            <h2>SaRa <span>Toyverse</span></h2>
-
-            <h3>Play More. Smile More.</h3>
-
-            <p>
-                A colourful world of toys and happiness.
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                WELCOME TO SARA TOYVERSE
+            </p>
+
+            <h1>
+                START YOUR<br>
+                <span>RACING</span><br>
+                ADVENTURE!
+            </h1>
+
+            <p class="hero-description">
+                Discover exciting toy cars, powerful monster trucks
+                and thrilling racing collections.
+            </p>
+
+            <a href="#shop" class="primary-btn">
+                Explore Our Cars →
+            </a>
+
+            <p class="tagline">
+                PLAY MORE. SMILE MORE.
             </p>
 
         </div>
 
+        <div class="hero-image">
+            <img src="./sara-toyverse-logo.png"
+                 alt="SaRa Toyverse Racing Logo">
+        </div>
 
-        <!-- QUICK LINKS -->
+    </section>
 
-        <div class="footer-links">
 
-            <h3>Quick Links</h3>
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
 
-            <a href="#home">Home</a>
+        <div class="highlight-item">
+            <span>🏎️</span>
+            <p>Cars for every adventure</p>
+        </div>
 
-            <a href="#categories">Categories</a>
+        <div class="highlight-item">
+            <span>📦</span>
+            <p>Every order matters</p>
+        </div>
 
-            <a href="#products">Shop</a>
+        <div class="highlight-item">
+            <span>⭐</span>
+            <p>Bring home happiness</p>
+        </div>
 
-            <a href="#about">About Us</a>
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories section" id="categories">
+
+        <div class="section-heading">
+            <p>FIND YOUR FAVOURITE</p>
+            <h2>Explore Toy Car Categories</h2>
+            <span>Choose your favourite ride!</span>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-icon">🏎️</div>
+                <h3>Sports Cars</h3>
+                <p>Speed and style</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🚙</div>
+                <h3>Monster Trucks</h3>
+                <p>Big wheels, big fun</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎮</div>
+                <h3>Remote Control Cars</h3>
+                <p>Take control</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🚗</div>
+                <h3>Pull-back Cars</h3>
+                <p>Pull back and race</p>
+            </div>
 
         </div>
 
+    </section>
 
-        <!-- CONTACT DETAILS -->
 
-        <div class="footer-contact">
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
 
-            <h3>Contact Us</h3>
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Discover Our Toy Cars</h2>
+            <span>Find your next favourite ride!</span>
+        </div>
+
+        <div class="shop-message">
+            <div class="shop-icon">🏁</div>
+            <h3>Exciting Cars Are Coming Soon!</h3>
+            <p>
+                We are preparing an exciting collection of toy cars
+                for all racing enthusiasts.
+            </p>
+            <p>Stay connected with SaRa Toyverse!</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US -->
+    <section class="about section" id="about">
+
+        <div class="about-content">
+            <p class="section-label">ABOUT OUR BRAND</p>
+
+            <h2>
+                Welcome to <span>SaRa Toyverse</span>
+            </h2>
 
             <p>
-                Phone:
+                SaRa Toyverse is a toy brand built around fun,
+                imagination and exciting adventures.
+                We aim to bring joy to children and toy lovers
+                through exciting toy car collections.
+            </p>
+
+            <h3>Our Promise</h3>
+
+            <p>
+                Every toy brings a new adventure.
+                Every smile makes us happy.
+            </p>
+
+            <strong>Play More. Smile More.</strong>
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <h2>Be the First to Know!</h2>
+
+        <p>
+            Stay connected and hear about our upcoming toy collections.
+        </p>
+
+        <form id="newsletter-form" class="newsletter-form">
+
+            <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">Subscribe</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>SaRa <span>Toyverse</span></h2>
+
+                <p class="footer-tagline">
+                    Play More. Smile More.
+                </p>
+
+                <p>
+                    A colourful world of toys and happiness.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>Phone:</p>
                 <a href="tel:+919840162366">
                     +91 98401 62366
                 </a>
-            </p>
 
-            <p>
-                Email:
+                <p>Email:</p>
                 <a href="mailto:queries@saratoyverse.com">
                     queries@saratoyverse.com
                 </a>
-            </p>
 
-            <p>Location: Chennai, Tamil Nadu</p>
+                <p>Location: Chennai, Tamil Nadu</p>
 
-            <p>
-                Instagram:
-                <a href="https://www.instagram.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <p>Instagram:</p>
+                <a href="#" target="_blank">
                     SaRa Toyverse
                 </a>
-            </p>
+
+            </div>
 
         </div>
 
-    </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 SaRa Toyverse. All Rights Reserved.
+            </p>
+        </div>
 
 
-    <!-- COPYRIGHT -->
+        <!-- WHATSAPP BUTTON: FOOTER ONLY -->
+        <a
+            href="https://wa.me/919840162366"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            WhatsApp
+        </a>
 
-    <div class="copyright">
+    </footer>
 
-        © 2026 SaRa Toyverse. All Rights Reserved.
-
-    </div>
-
-    <a
-    href="https://wa.me/919840162366?text=Hello%20SaRa%20Toyverse"
-    class="whatsapp-button"
-    target="_blank"
-    rel="noopener noreferrer">
-    WhatsApp
-    </a>
-
-</footer>
-
-
-
-    <!-- ================= WHATSAPP BUTTON ================= -->
-
-
-
-    <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
